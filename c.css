@@ -1,0 +1,72 @@
+/* body{
+  background-color: #333;
+}
+.box{
+background-color: white;
+width: 300px;
+height: 300px;
+position: relative;
+margin: auto;
+top: 200px;
+transition: background,border-radius,transform;
+transition-duration: 2s;
+}
+.box:hover{
+  background-color: blue;
+  border-radius: 100%;
+  transform: rotateY(180deg);
+} */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  line-height: 1.6;
+  text-align: center;
+}
+#show{
+  color:rgba(123, 78,69, 0.9);
+  height: 400px;
+  font-size: 50px;
+  position: relative;
+  animation: move 2s;
+  animation-fill-mode: forwards;
+}
+.container{
+  position: relative;
+  animation: move1 4s;
+}
+.btn{
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin-top: 50px;
+ animation-name: btn;
+ animation-duration: 3s;
+ animation-delay: 3s;
+ opacity: 0;
+ animation-fill-mode: forwards;
+ transition: transform 1s;
+}
+.btn:hover{
+  transform: rotateY(180deg);
+}
+
+@keyframes move{
+  0%{top: -50px;}
+  100%{top: 200px;}
+}
+@keyframes move1{
+  0%{left: -1000px;}
+  100%{left: 0px;}
+}
+@keyframes btn{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+

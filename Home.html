@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title> My bootstrap</title> 
+    <style type="text/css">
+        #slider{
+            overflow:hidden;
+        }
+        #slider figure{
+            position: relative;
+            width:500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+        #slider figure img{
+            float:left;
+            width: 20%;
+            height: 500px;
+            transition: filter .5s;
+        }
+        #slider figure img:hover{
+            filter: brightness(.8);
+        }
+        @keyframes slider{
+            0%{
+                left: 0;
+            }
+            20%{
+                left:0;
+            }
+            25%{
+                left:-100%;
+            }
+            45%{
+                left:-100%;
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left:-200%;
+            }
+            75%{
+                left:-300%;
+            }
+            95%{
+                left:-300%;
+            }
+            
+            100%{
+                left:-400%;
+            }
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: minmax(100px,auto);
+            grid-gap: 3px;
+        }
+        #grid > div{
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        #c1{
+            grid-column: 1/3;
+        }
+        #c2{
+            font-weight: bold;
+            text-align: center;
+        }
+        #c5{
+            font-weight: bold;
+            text-align: center;
+        }
+        hr{
+            background-image: linear-gradient(to right,white,white,black,black,black,white,white);
+            height: 5px;
+        }
+        #forms{
+            display: inline-block;
+            width: 820px;
+            background-color: #E7FDFA;
+        }
+        footer>a{
+            position: relative;
+            top: 100px;
+            font-size: 30px;
+        }
+        #roles{
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            grid-auto-rows:minmax(200px,auto);
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+            justify-content: center;
+        }
+       
+        #roles #c1{
+            grid-column: 1/2;
+            border-radius: 50%;
+            background-image: url("images/info1.jpg");
+            background-size: cover;
+        }
+        #roles .circle{
+            border-radius: 50%;
+            transition: transform .5s;
+        }
+        #roles #c2{
+            background-image: url("images/info2.jpg");
+            background-size: cover;
+        }
+        #roles #c3{
+            background-image: url("images/info3.jpg");
+            background-size: cover;
+        }
+        #roles .circle:hover{
+            transform: scale(1.2);
+        }
+      
+     
+    </style>  
+</head>
+<body>
+    <nav id="header">
+        <a href="login.html" id="login">Login</a>
+        <div id="im"></div>
+     <div id="nav">
+    <div style="background-color:yellowgreen ;"><a href ="#" style="text-decoration:none;color:white">HOME &nbsp;</a></div>
+    <div><a href = "Aboutus.html" style="text-decoration:none;color:white">ABOUT US &nbsp;</a></div>
+    <div><a href = "Contact.html" style="text-decoration:none;color:white">CONTACT &nbsp;</a></div>
+    <div><a href = "Program.html" style="text-decoration:none;color:white">PROGRAMS &nbsp;</a></div>
+    <div><a href = "Gallary.html" style="text-decoration:none;color:white">GALLERY &nbsp;</a></div>
+
+</div>
+</nav>
+<div id="slider" class="container">
+    <figure>
+        <img src="images/im1.jpg" height="400px">
+        <img src="images/im5.jpg" height="400px">
+        <img src="images/im3.jpg" height="400px">
+        <img src="images/img4.png" height="400px">
+        <img src="images/im2.jpg" height="400px">
+
+
+    </figure>
+</div><br><br><br>
+<div id="grid" class="container">
+    <div id="c1"> <video src="images/comp2.mp4" width="860px" controls></video></div>
+    <div id="c2"><div style="background-color:gray ;border-radius:10px; color:white; padding-top:20px">EVENTS <i class="fa fa-calendar"></i></div>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsam laboriosam mollitia similique ratione fugiat. Quia nostrum obcaecati voluptatibus eveniet tempora? Ex iste suscipit illo culpa vero pariatur autem commodi vel facere ipsa laboriosam omnis, modi totam maiores quas fuga, expedita, quod rerum qui dignissimos cumque nemo. Ipsam rem nostrum, earum asperiores ea laudantium magnam repellat perferendis id molestias reprehenderit distinctio pariatur quo fugit officia expedita explicabo atque! Mollitia nisi ducimus non. Sit quod, omnis quisquam culpa possimus ad deleniti ex cupiditate porro dolor sunt harum magni facere rem? Facere nesciunt sequi quae odit rerum dolorum cupiditate cum, eos illum!</div>
+    <div id="c3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ut non accusantium corrupti sequi unde magni perferendis pariatur aliquam est incidunt voluptatum ratione excepturi ab, commodi harum. Iusto ullam delectus voluptates laudantium placeat, exercitationem sapiente ratione expedita omnis laboriosam soluta rerum nulla iste quibusdam saepe et ut quidem ex amet repellat earum? Voluptates, veritatis! Minima exercitationem eaque corporis dolorum dicta! Maiores debitis fugiat eaque odit placeat illo expedita maxime corporis error itaque, officia animi sunt reiciendis dolorum magni aperiam sint ea a consectetur nobis perferendis? Quaerat velit quos minima hic consectetur autem non commodi, iusto voluptas, eveniet vel molestias sunt?
+    </div>
+    <div id="c4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit saepe incidunt provident facere rerum laborum ullam necessitatibus est labore vitae itaque quasi ex unde, beatae numquam? Ducimus tempora sequi aut ad laboriosam modi, nulla earum officia suscipit maxime natus beatae voluptatem sunt eligendi facere adipisci vel rerum repellendus odio? Quam necessitatibus et adipisci ipsam doloribus soluta dicta, corporis libero facere culpa animi consectetur aliquid odio, sit natus harum quia architecto sunt exercitationem maiores. Architecto consequatur reiciendis aliquid nulla numquam illo quod libe</div>
+    <div id="c5"><div style="background-color:gray ; color:white; border-radius:10px;padding-top:20px">NEWS <i class="fa fa-newspaper-o"></i></div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nostrum tempore distinctio veritatis vitae ullam atque, saepe labore aperiam excepturi impedit animi? Iusto voluptas blanditiis beatae id autem consectetur ipsum, eligendi sit necessitatibus inventore, distinctio accusantium expedita a cum maxime voluptates nihil, praesentium itaque aperiam alias incidunt ducimus minima et? Possimus a provident sint quae, eveniet, modi facere delectus hic eaque, debitis officiis blanditiis dolorem. Aperiam vero eius reiciendis temporibus non enim ab ut minima placeat accusamus ipsam modi, voluptatem eveniet reprehenderit quae! Voluptate, autem itaque! Amet tenetur maiores hic? Eveniet corporis magni laborum nesciunt quas iusto harum numquam error!</div>
+
+</div>
+<br><br>
+<div id="roles" class="container">
+    <div id="c1" class="circle"></div>
+    <div id="c2" class="circle"></div>
+    <div id="c3" class="circle"></div>
+    <div id="c4" class="topic"><b style="margin-left:65px ;">MANAGER</b><br>
+   <b style="color:rgb(0, 106, 255) ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sequi optio esse suscipit ex voluptatem aspernatur! Consequuntur, maiores incidunt necessitatibus saepe modi nisi voluptates quasi.</b> 
+    </div>
+    <div id="c7" class="topic"><b style="margin-left:65px ;">PRESIDENT</b><br> <b style="color:rgb(0, 106, 255) ;" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto itaque impedit necessitatibus, ad sed in voluptate, consequatur deserunt exercitationem quam suscipit dignissimos similique excepturi velit</b>.</div>
+    <div id="c6" class="topic"><b style="margin-left:80px ;">HEAD</b><br><b style="color:rgb(0, 106, 255) ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum voluptatum repudiandae eum eaque dignissimos molestias sit maiores dolorem modi, provident officiis, architecto eos quae perspiciatis.</b></div>
+</div>
+<h4 style="font-weight:bold;">Leave a comment</h4>
+<hr>
+<div id="forms">
+<form style="margin-left:100px ;">
+    <label style="font-size:20px ;font-weight: bold; ">Comment</label><br>
+    <textarea style="width:700px ; height: 200px; font-size: 20px;" required></textarea><br><br>
+    <label style="font-size:20px ;font-weight: bold;">Name</label><br>
+    <input type="text" style="width: 400px;height: 60px; font-size: 20px;" required><br><br>
+    <label style="font-size:20px ;font-weight: bold;">Email</label><br>
+    <input type="email" style="width: 400px;height: 60px; font-size: 20px;" required><br><br>
+<button class="btn btn-primary" style="border-radius:20px ;">Post Comment</button><br><br>
+</form>
+</div>
+
+
+<footer style="background-color: #333; text-align: center;position: sticky;top: 100%;height:250px;color: white;"> 
+    <a href="#" style="margin-right:40px ;"> <i class="fa fa-facebook"></i></a>
+    <a href="#" style="margin-right:40px ;"><i class="fa fa-twiter"></i></a>
+    <a href="#" style="margin-right:40px ;"><i class="fa fa-youtube"></i></a>
+    <a href="#" style="margin-left:40px ;"><i class="fa fa-linkedin"></i></a><br><br<br>
+   <p style=" position:relative;top:150px"> Copyright 2015EC. All rights reserved.</p>
+
+    </footer>
+
+</body>
+</html>

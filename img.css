@@ -1,0 +1,53 @@
+body{
+    min-height: 100vh;
+    background-image: url("images/ba.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#nav div{
+    display:inline-block;
+    padding:10px 10px ;
+    transition: background .3s;
+}
+#nav{
+    float:right;
+    background-color: #333;
+    margin-top:55px ;
+}
+#nav > div:hover{
+    border:0px solid ;
+    background-color:red ;
+}
+#header{
+    border:0px solid;
+    height: 100px;
+    background-image: linear-gradient(to right,white,white,cyan,black);
+box-shadow: 0px 10px 20px #4d4b4b;
+}
+#im{
+background-image: url('Capture.JPG');
+background-size: cover;
+display: inline-block;
+height: 100px;
+width: 100px;
+}
+
+#login{
+    display: inline;
+    float: right;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+#login:hover{
+    background-color: palevioletred;
+    color: black;
+}
+
+footer>a{
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+}

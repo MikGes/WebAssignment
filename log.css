@@ -1,0 +1,23 @@
+body{
+    background-image:url("logPic.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+#header{
+    border:0px solid;
+    height: 100px;
+    background-image: linear-gradient(to right,white,white,black,black);;
+}
+#im{
+    background-image: url('Capture.JPG');
+background-size: cover;
+display: inline-block;
+height: 100px;
+width: 100px;
+}
+#form{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 70px;
+}
