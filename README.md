@@ -1,2 +1,2 @@
 # WebAssignment
-Just a vary simple group assignment
+Just a very simple group assignment
